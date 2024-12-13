@@ -55,7 +55,7 @@
 
         .btn-warning {
             font-weight: bold;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            text-shadow: none;
             background-color: #50C878;
             border: none;
             border-radius: 5px;
@@ -87,6 +87,23 @@
             background-color: #6fdc8e;
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
         }
+
+        /* Media Query untuk memastikan tampilan di perangkat mobile tetap rapi */
+        @media (max-width: 768px) {
+            .hero-section img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .services-section .card {
+                margin-bottom: 20px;
+            }
+
+            .projects-section .card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
 
@@ -108,7 +125,7 @@
         <div class="container">
             <h2 class="display-5">IN MANUK WE TRUST</h2>
             <p>disini harusnya ada kata kata gitu biar keen cmn gw gatau apa kata katanya</p>
-            <button class="btn btn-warning">MULAI?</button>
+            <p style="font-size: 24px; font-weight: bold;">MULAI?</p> <!-- Ubah tombol menjadi teks -->
             <div class="mt-4 d-flex justify-content-center">
                 <img src="manuk.png" alt="Centered Person" class="rounded-circle">
             </div>
@@ -119,23 +136,23 @@
         <div class="container text-center">
             <h3>ini jasa jasa kita, tinggal pilih</h3>
             <div class="row mt-4">
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-12">
                     <div class="card p-3">
-                        <img src="gambar.jpg" alt="Web Design Image" class="mb-3">
+                        <img src="gambar.jpg" alt="Web Design Image" class="mb-3 img-fluid">
                         <h4>Web Design</h4>
                         <p>ini bidang web designnya gitu</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-12">
                     <div class="card p-3">
-                        <img src="gambar.jpg" alt="Development Image" class="mb-3">
+                        <img src="gambar.jpg" alt="Development Image" class="mb-3 img-fluid">
                         <h4>Development</h4>
                         <p>ini bidang iotnya gitu</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-12">
                     <div class="card p-3">
-                        <img src="gambar.jpg" alt="Ecommerce Image" class="mb-3">
+                        <img src="gambar.jpg" alt="Ecommerce Image" class="mb-3 img-fluid">
                         <h4>Ecommerce</h4>
                         <p>ini produk jualan kita lho</p>
                     </div>
@@ -148,15 +165,15 @@
         <div class="container">
             <h3>apakek judulnya ini gatau gw</h3>
             <div class="row mt-4">
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-12">
                     <h4>apakek</h4>
                     <p>gatau ini isinya tulisan</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-12">
                     <h4>apakek</h4>
                     <p>gatau ini isinya tulisan</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-12">
                     <h4>apakek</h4>
                     <p>gatau ini isinya tulisan</p>
                 </div>
@@ -169,7 +186,7 @@
             <h3>See Our Projects</h3>
             <p>contoh project kita bos</p>
             <div class="card mx-auto" style="max-width: 600px;">
-                <img src="gambar.jpg" alt="Project Example" class="card-img-top">
+                <img src="gambar.jpg" alt="Project Example" class="card-img-top img-fluid">
                 <div class="card-body">
                     <h5>Web Design Project</h5>
                     <p>design web terkini selfie bis</p>
